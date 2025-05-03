@@ -4,6 +4,15 @@ namespace Domain.Entities;
 
 public class LinkEntity : BaseEntity
 {
+    public LinkEntity(Guid userId, string fullUrl, string shortUrl, DateTime expireTime)
+    {
+        Id = Guid.NewGuid();
+        UserId = userId;
+        FullUrl = fullUrl;
+        ShortUrl = shortUrl;
+        ExpireTime = expireTime;
+        CreatedAt = DateTime.Now;
+    }
     public LinkEntity(Guid id, Guid userId, string? fullUrl, string? shortUrl, DateTime expireTime, DateTime createdAt,
         DateTime updatedAt)
     {

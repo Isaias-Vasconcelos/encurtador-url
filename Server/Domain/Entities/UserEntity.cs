@@ -20,6 +20,14 @@ public class UserEntity : BaseEntity
         CreatedAt = createdAt;
         UpdatedAt = updatedAt;
     }
+    public UserEntity(string? name, string? email, string? password)
+    {
+        Id = Guid.NewGuid();
+        Name = name;
+        Email = email;
+        Password = password;
+        CreatedAt = DateTime.Now;
+    }
 
     public string? Name { get; private set; }
     public string? Email { get; private set; }
