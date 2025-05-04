@@ -32,4 +32,6 @@ public class LinkEntity : BaseEntity
     public string? FullUrl { get; private set; }
     public string? ShortUrl { get; private set; }
     public DateTime ExpireTime { get; private set; }
+    public UserEntity User { get; set; }
+    public ICollection<AccessEntity>? Access { get; set; }
 }

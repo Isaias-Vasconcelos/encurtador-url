@@ -34,4 +34,6 @@ public class UserEntity : BaseEntity
     public string? Password { get; private set; }
     public string? Token { get; private set; }
     public string? RefreshToken { get; private set; }
+    public ICollection<LinkEntity>? Links { get; set; }
+    public ICollection<WebhookEntity>? Webhooks { get; set; }
 }

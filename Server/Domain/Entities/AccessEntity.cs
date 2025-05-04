@@ -24,4 +24,5 @@ public class AccessEntity : BaseEntity
     }
     public Guid LinkId { get; private set; }
     public string? Device { get; private set; }
+    public LinkEntity? Link { get; set; }
 }

@@ -23,4 +23,5 @@ public class WebhookEntity:BaseEntity
     public string? CallbackUrl { get;private set; }
     public bool IsNewAccess { get;private set; }
     public bool IsNewLink { get;private set; }
+    public UserEntity? User { get; set; }
 }
